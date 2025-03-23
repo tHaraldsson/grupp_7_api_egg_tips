@@ -1,7 +1,7 @@
 const cors = require('cors');
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000; // ändrade port så det ska fungera både lokalt och på render
 
 app.use(cors());
 
